@@ -16,7 +16,7 @@ function lookUpItinerary(){
 			console.log(data);
 			if(data.check=="success"){
 				var itineraryData = data.itineryData;
-				// displayItinerary(itineraryData);
+				displayItinerary(itineraryData);
 					$("#LocationSearchResultSection").fadeIn();
 
 			}else{
