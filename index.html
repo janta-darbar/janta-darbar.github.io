@@ -11,10 +11,25 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/select2.min.css">
+		<style>
+			.charC{
+			    position: relative;
+			    z-index:999999;
+			    width: 854px;
+			    height: 480px;			    
+			    background-color: #000;
+				color: red;
+				font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				font-style: italic;
+				font-size: 12px;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="fullScreenOverlay">
-			
+		<div class="fullScreenOverlay" onclick ="javascript:$(this).hide();">
+			<div class="charC">
+				<span >Carousel to display multiple images with a brief </span>
+			</div>
 		</div>
 		<nav class="navbar navbar-inverse navbar-fixed-top" id="nav-bar" >
 			<div class="container">
@@ -117,7 +132,8 @@
 							<div class="panel-group" id="itineraryHolderDiv">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										<a href="#collapse1" data-toggle="collapse" data-parents="asda">Day 1</a>
+										<!-- <a href="#collapse1" data-toggle="collapse" data-parents="asda">Day 1</a> -->
+										<a href="javascript:void(0);" onclick="javascript:toggleItineraryPanels(1);">Day 1</a>
 									</div>
 								</div>
 								<div id="collapse1" class="pane-collapse collapse  in">
@@ -133,6 +149,39 @@
 												<img src="images/goa-beach.jpg" class="img-circle" alt="Cinque Terre" width="120" height="100">
 											</div>
 										</div>
+										<div class="row">
+											<div class="col-xs-3 pull-right">
+												<a href="javascript:void(0);" onclick="javascript:toggleItineraryPanels(2);">Finish</a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<!-- <a href="#collapse2" data-toggle="collapse" data-parents="asda">Day 2</a> -->
+										<a href="javascript:void(0);" onclick="javascript:toggleItineraryPanels(2);">Day 2</a>
+									</div>
+								</div>
+								<div id="collapse2" class="pane-collapse collapse  out">
+									<div class="panel-body">
+										<div class="row" style="font-style: italic;">
+											<div class="col-sm-3">
+												<p>Arrival</p>
+											</div>
+											<div class="col-sm-4">
+												<p>Arrive at APT,Move to Hotel,Evening Free</p>
+											</div>
+											<div class="col-sm-5">
+												<img src="images/goa-beach.jpg" class="img-circle" alt="Cinque Terre" width="120" height="100">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-3 pull-right">
+												Finish
+											</div>
+										</div>
+										
 									</div>
 								</div>								
 							</div>
