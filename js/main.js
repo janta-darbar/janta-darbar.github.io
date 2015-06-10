@@ -71,7 +71,7 @@ function displayItinerary(data){
 		itineraryHolderHtml		+= '					<p>'+descript+'</p>';
 		itineraryHolderHtml		+= '				</div>';
 		itineraryHolderHtml		+= '				<div class="col-sm-4">';
-		itineraryHolderHtml		+= '					<img src="images/goa-beach.jpg" class="img-circle" alt="Cinque Terre" width="120" height="100" onclick="javascript:showOverLay();">';
+		itineraryHolderHtml		+= '					<img style="cursor:pointer;" src="images/goa-beach.jpg" class="img-circle" alt="Cinque Terre" width="120" height="100" onclick="javascript:showOverLay();">';
 		itineraryHolderHtml		+= '				</div>';
 		itineraryHolderHtml		+= '			</div>';
 		itineraryHolderHtml		+= '			<div class="row" >';
