@@ -13,6 +13,9 @@
 		<link rel="stylesheet" href="css/select2.min.css">
 	</head>
 	<body>
+		<div class="fullScreenOverlay">
+			
+		</div>
 		<nav class="navbar navbar-inverse navbar-fixed-top" id="nav-bar" >
 			<div class="container">
 				<div class="navbar-header">
@@ -27,7 +30,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a class="montserrat" href="#aboutus">THE TEAM</a></li>
+						<li><a class="montserrat" href="#aboutus" >THE TEAM</a></li>
 						<li><a class="montserrat" href="#contactus">THE MISSION</a></li>
 						<li><a class="montserrat" href="#feedback">FEEDBACK</a></li>
 						<li><a class="montserrat" href="#faq">FAQ</a></li>
@@ -37,114 +40,115 @@
 			</div>
 		</nav>
 		
-		<div class="jumbotron" style="  background-color: rgb(55, 2, 8);color: white;">
-			<div class="container text-center">
-				<h1 style="font-weight:800;">Itinery Genie</h1>
-				<hr class="small">
-				<p style="font-style: italic;"> This is a simple one-liner for the site</p>
-			</div>
+		<div class="jumbotron text-center" style="  background-color: #a3232d;color: white;">
+			<h1 class="jumboHeading" style="color:#DFCCB9;">
+				<span class="jumboHeading font-green" >i</span>tinerary <span class="jumboHeading font-green" >g</span>enie
+			</h1>
+			<hr class="small">
+			<p class="one-liner"> This is a simple one-liner for the site</p>
 		</div>
-
 		<div class="container">
-			<section>
-				<div class="row well">
-					<!-- <div class="container text-center">
-						<h4>Let's get started</h3>
-						<p>Enter your source and destination</p>
-					</div> -->
+				<div class="col-lg-9 well" style="bord2er:1px solid black;">
+					<div class="row">
+						<section>
+							<form action="" class="form-inline text-center">
+								<div class="form-group">
+									<label for="source">Source</label>
+									<select class="source-choose">
+										<option value="Delhi">Delhi</option>
+										<option value="Goa">Goa</option>
+										<option value="Kolkata">Kolkata</option>
+										<option value="Chennai">Chennai</option>
+										<option value="Pune">Pune</option>
+										<option value="Bengaluru">Bengaluru</option>
+										<option value="Jaipur">Jaipur</option>
+										<option value="Chandigarh">Chandigarh</option>
+										<option value="Hyderabad">Hyderabad</option>
+										<option value="Patna">Patna</option>
+										<option value="Guwahati">Guwahati</option>
+										<option value="Goa">Goa</option>
+										<option value="Bhopal">Bhopal</option>
+										<option value="Kanpur">Kanpur</option>
+										<option value="Lucknow">Lucknow</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="destination">Destination</label>
+									<select class="destination-choose">
+										<option value="Delhi">Delhi</option>
+										<option value="Mumbai">Mumbai</option>
+										<option value="Kolkata">Kolkata</option>
+										<option value="Chennai">Chennai</option>
+										<option value="Pune">Pune</option>
+										<option value="Bengaluru">Bengaluru</option>
+										<option value="Jaipur">Jaipur</option>
+										<option value="Chandigarh">Chandigarh</option>
+										<option value="Hyderabad">Hyderabad</option>
+										<option value="Patna">Patna</option>
+										<option value="Guwahati">Guwahati</option>
+										<option value="Goa">Goa</option>
+										<option value="Bhopal">Bhopal</option>
+										<option value="Kanpur">Kanpur</option>
+										<option value="Lucknow">Lucknow</option>
+									</select>
 
-					<form action="" class="form-inline text-center">
-						<div class="form-group">
-							<label for="source">Source</label>
-							<select class="source-choose">
-								<option value="Delhi">Delhi</option>
-								<option value="Goa">Goa</option>
-								<option value="Kolkata">Kolkata</option>
-								<option value="Chennai">Chennai</option>
-								<option value="Pune">Pune</option>
-								<option value="Bengaluru">Bengaluru</option>
-								<option value="Jaipur">Jaipur</option>
-								<option value="Chandigarh">Chandigarh</option>
-								<option value="Hyderabad">Hyderabad</option>
-								<option value="Patna">Patna</option>
-								<option value="Guwahati">Guwahati</option>
-								<option value="Goa">Goa</option>
-								<option value="Bhopal">Bhopal</option>
-								<option value="Kanpur">Kanpur</option>
-								<option value="Lucknow">Lucknow</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="destination">Destination</label>
-							<select class="destination-choose">
-								<option value="Delhi">Delhi</option>
-								<option value="Mumbai">Mumbai</option>
-								<option value="Kolkata">Kolkata</option>
-								<option value="Chennai">Chennai</option>
-								<option value="Pune">Pune</option>
-								<option value="Bengaluru">Bengaluru</option>
-								<option value="Jaipur">Jaipur</option>
-								<option value="Chandigarh">Chandigarh</option>
-								<option value="Hyderabad">Hyderabad</option>
-								<option value="Patna">Patna</option>
-								<option value="Guwahati">Guwahati</option>
-								<option value="Goa">Goa</option>
-								<option value="Bhopal">Bhopal</option>
-								<option value="Kanpur">Kanpur</option>
-								<option value="Lucknow">Lucknow</option>
-							</select>
-
-							<!-- <select class="destination-choose">
-								<?php 
-								/*$counter = 0;
-								foreach ($arr as $key => $value) {
-									?>
-									<option value="<?=$value?>"><?=$value?></option>
-									<?php
-								}*/
-								?>
-							</select> -->
-						</div>
-						<div class="form-group">
-							<label for="days">Duration</label>
-							<select class="days-choose">
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10+</option>
-							</select>
-							<!--<select class="days-choose">
-								<?php 
-								/*$days = 1;
-								while($days<11){
-									?>
-									<option value="<?=$days?>"><?=($days<10)?$days:"10+" ?></option>
-									<?php
-									$days++;
-								}*/
-								?>
-							</select>-->
-						</div>
-						<button type="submit" class="btn btn-xs btn-custom2">Look Up</button>
-					</form>
-
-					
+								</div>
+								<div class="form-group">
+									<label for="days">Duration</label>
+									<select class="days-choose">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10+</option>
+									</select>
+								</div>
+								<button type="button" class="btn btn-xs btn-custom2" onclick="javascript:lookUpItinerary();">Look Up</button>
+							</form>							
+						</section>
+					</div>
+					<div class="row " style="margin-top:20px;">
+						<section id="LocationSearchResultSection" style="display:none;">
+							<div class="panel-group" id="itineraryHolderDiv">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<a href="#collapse1" data-toggle="collapse" data-parents="asda">Day 1</a>
+									</div>
+								</div>
+								<div id="collapse1" class="pane-collapse collapse  in">
+									<div class="panel-body">
+										<div class="row" style="font-style: italic;">
+											<div class="col-sm-3">
+												<p>Arrival</p>
+											</div>
+											<div class="col-sm-4">
+												<p>Arrive at APT,Move to Hotel,Evening Free</p>
+											</div>
+											<div class="col-sm-5">
+												<img src="images/goa-beach.jpg" class="img-circle" alt="Cinque Terre" width="120" height="100">
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</section>
+					</div>
+						
 				</div>
-			</section>
-			<section>
-				
-			</section>
+				<div class="col-lg-3 well"></div>
 		</div>
+
+		
 
 		<script src="js/jquery.js"></script>
 		<script src="js/select2.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
 		<script>
 			$(document).ready(function() {
 			  $(".source-choose").select2();
@@ -152,14 +156,13 @@
 			$(document).ready(function() {
 			  $(".destination-choose").select2();
 			});
+			function lookUpItinery(){
+				alert("//");
+				setTimeout(function(){
+				 alert("over");
+				}, 5000);
+			}
 		</script>
 		
 	</body>
 </html>
-
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<a href="#collapse1" data-toggle="collapse" data-parents="asda">Day 1</a>
-	</div>
-</div>
-<div id="collapse1" class="pane-collapse collapse  in">	<div class="panel-body">		<div class="row">			<div class="col-sm-4">				<h3>column 1</h3>			</div>			<div class="col-sm-4">				<h3>column 2</h3>			</div><div class="panel panel-default">	<div class="panel-heading">		<a href="#collapse1" data-toggle="collapse" data-parents="asda">Day 2</a>	</div></div><div id="collapse2" class="pane-collapse collapse  out">	<div class="panel-body">		<div class="row">			<div class="col-sm-4">				<h3>column 1</h3>			</div>			<div class="col-sm-4">				<h3>column 2</h3>			</div><div class="panel panel-default">	<div class="panel-heading">		<a href="#collapse1" data-toggle="collapse" data-parents="asda">Day 3</a>	</div></div><div id="collapse3" class="pane-collapse collapse  out">	<div class="panel-body">		<div class="row">			<div class="col-sm-4">				<h3>column 1</h3>			</div>			<div class="col-sm-4">				<h3>column 2</h3>			</div><div class="panel panel-default">	<div class="panel-heading">		<a href="#collapse1" data-toggle="collapse" data-parents="asda">Day 4</a>	</div></div><div id="collapse4" class="pane-collapse collapse  out">	<div class="panel-body">		<div class="row">			<div class="col-sm-4">				<h3>column 1</h3>			</div>			<div class="col-sm-4">				<h3>column 2</h3>			</div>
