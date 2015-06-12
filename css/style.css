@@ -2,6 +2,67 @@ body{padding-top:40px;font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Ari
 .jumbotron .one-liner{
 	font-size:14px;font-style: italic;
 }
+.thumb-container-new {
+  width: 100%;
+  /*margin: 30px auto;*/
+  overflow: hidden;
+}
+.galleryItem:hover{
+  background-color: #a3232d;
+}
+.galleryItem {
+  color: #797478;
+  float: left;   
+  padding:0 !important; 
+  /*padding: 1.6%;*/
+  width: 29%;
+  margin:  2% 2% 50px 2%; 
+  background-color: #214163;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+ 
+.galleryItem h4 {
+    font-style: italic;
+}
+ 
+.galleryItem img {
+    max-width: 100%;
+    /* -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; */
+}
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width : 940px),
+only screen and (max-device-width : 940px){
+    .galleryItem {width: 44%;/* background-color:red;padding: 2%; */}
+}
+ 
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+    .galleryItem {width: 44%;/* background-color: yellow;padding: 2.5%; */}
+    .galleryItem h4 {font-size: 16px;}
+}
+ 
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+    .galleryItem {width: 100%;/*background-color:blue;padding:4%; */}
+    .galleryItem img {width: 100%;}
+    .galleryItem h4 {font-size: 14px;}
+}
+ 
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+    .galleryItem {width: 100%;/* background-color:pink;padding:5%; */}
+    /*.galleryItem img {width: 100%;}*/
+    .galleryItem h4 {font-size: 14px;}    
+}
+
+
+
+
 .font-green{
   color:#53BD58 !important;
 }
